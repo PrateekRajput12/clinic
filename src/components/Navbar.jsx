@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useTheme } from '../hooks/useTheme';
 import { FaSun, FaMoon } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Navbar = ({ theme, setTheme }) => {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -54,9 +55,8 @@ const Navbar = ({ theme, setTheme }) => {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: index * 0.1 }}
                                 >
-                                    <a href={link.path} className="nav-link">
-                                        {link.label}
-                                    </a>
+
+                                    <Link to={link.path}>{link.label}</Link>
                                 </motion.li>
                             ))}
                         </ul>
@@ -118,7 +118,7 @@ const Navbar = ({ theme, setTheme }) => {
                     </ul>
                 </motion.div>
             </div>
-        </motion.nav>
+        </motion.nav >
     );
 };
 
