@@ -208,7 +208,7 @@ const Contact = () => {
         try {
             setIsSubmitted(true);
             console.log("here");
-            const res = await fetch("http://localhost:5000/send-email", {
+            const res = await fetch("https://clinic-server-253a.onrender.com/send-email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
