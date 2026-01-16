@@ -4,6 +4,7 @@ import { FaHeartbeat, FaUserMd, FaClock, FaAward } from 'react-icons/fa';
 import Button from '../components/Button';
 import Card from '../components/Card';
 import '../styles/home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const features = [
@@ -188,6 +189,7 @@ const Home = () => {
                             Book Appointment
                         </Button> */}
                         <Link className="cta-button">Book Appointment</Link>
+                        <Link className="cta-button" to={'/contact'}>Book Appointment</Link>
                     </motion.div>
                 </div>
             </section>
