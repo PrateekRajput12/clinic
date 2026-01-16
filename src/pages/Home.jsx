@@ -184,9 +184,10 @@ const Home = () => {
                         <p className="cta-description">
                             Schedule your appointment today and take the first step towards a healthier, more confident smile.
                         </p>
-                        <Button href="/contact" className="cta-button">
+                        {/* <Button href="/contact" className="cta-button">
                             Book Appointment
-                        </Button>
+                        </Button> */}
+                        <Link className="cta-button">Book Appointment</Link>
                     </motion.div>
                 </div>
             </section>
